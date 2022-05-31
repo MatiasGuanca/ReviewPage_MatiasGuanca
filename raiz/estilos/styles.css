@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.main {
+    background-color: #fbfaff;
+    display: grid;
+    grid-template-areas: "head"
+                         "body"
+                         "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+}     
+.main-head{
+    grid-area: head;
+}
+.main-body{
+    grid-area: body;
+}
+.main-footer{
+    grid-area: footer;
+}
+
+header {
+   background-color: #14181c;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   padding: 10px 0px;
+}
+
+.search-box {
+    border: 2px solid #fb8500;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    height: 30px;
+    padding: 2px;
+}
+.search-box__input {
+    font-size: 1rem;
+    padding: 0em 0.5em;
+    margin-right: 3px;
+    border-radius: 50px;;
+    border: 0;
+}
+.search-box__submit {
+    font-size: 1rem;
+    border: 0;
+    background: linear-gradient(120deg,#fd9e02,#9a130e);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}                                 
+.nav__links {
+    width: 37%;
+}
+.nav__links ul {
+    display: flex;
+    width: 100%;
+}
+.nav__links ul li {
+    padding: 0px 15px;
+}
+.nav__links ul li a {
+    transition: 0.3s ease;
+    color: white;
+}
+.nav__links ul li a:visited, .nav__links ul li a:active {
+    color: white;
+}
+.nav__links ul li a:hover {
+    background: linear-gradient(120deg,#fd9e02,#9a130e);
+    padding: 0.4rem;
+    border-radius: 30px;
+}
+.forms {
+    font-size: 1rem;
+    display: flex;
+}
+.forms a {
+    color: #fd9e02;
+    transition: 0.3s ease;
+    padding: 0px 5px;
+}
+.forms a:visited {
+    color: #fd9e02;
+}
+.forms a:hover {
+    color: #bb3e03;
+}
+
+.main-body {
+    display: grid;
+    grid-template-areas: "popMovies popMovies popMovies"
+                         "newMovies newSeries popStreaming";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+}
+.popular-movies{
+    grid-area: popMovies;
+    justify-self: center;
+    width: 1172px;
+    height: 310px;
+    background-color: #14181c;
+    padding: 40px 0px;
+}
+.popular-movies h2{
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 15px 0px 15px 60px;
+    color: white;
+    border-bottom: 2px solid #fd9e02;
+}
+.popular-movies ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.popular-movies ul li {
+    width: 156px;
+    height: 231px;
+    cursor: pointer;
+    position: relative;
+}
+
+.popular-movies ul li img{
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #A9B8BF;
+}
+.image__overlay {
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.1s ease;
+    text-align: center;
+}
+.image__overlay:hover {
+    border: 2px solid #fd9e02;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+.new-movies{
+    grid-area: newMovies;
+    
+}
+.new-series{
+    grid-area: newSeries;
+    
+}
+.popular-streaming{
+    grid-area: popStreaming;
+    
+}
+.new-container {
+    background: linear-gradient(120deg,#fd9e02,#9a130e);
+    border-radius: 15px;
+    width: 325px;
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.new-movies h2 , .new-series h2, .popular-streaming h2 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.new-movies, .new-series, .popular-streaming {
+    display: flex;
+    justify-content: center;
+    background-color: #14181c;
+    width: 100%;
+    height: 400px;
+    padding: 30px 0px;
+}
+
+.main-head__news {
+    grid-area: head;
+}
+.main-body__news {
+    grid-area: body;
+
+}
+.main-footer__news {
+    grid-area: footer;
+}
+.news {
+    justify-self: center;
+    width: 1172px;
+    height: auto;
+    background-color: #14181c;
+    padding: 40px 0px;
+    text-align: center;
+}
+.news h2 {
+    border-bottom: 2px solid #fd9e02;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: white;
+}
+.news ul {
+    width: fit-content;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.news ul li {
+    width: 320px;
+    height: 340px;
+    flex-direction: column;
+
+}
+.news ul li img{
+    height: 160px;
+    width: 300px;
+    transition: 0.2s ease;
+}
+.news ul li img:hover{
+    cursor: pointer;
+    border: 2px solid #fb8500;
+    height: 174px;
+    width: 310px;
+}
+.news ul li p{
+    align-self: center;
+    margin-top: 15px;
+    width: 300px;
+    color: white;
+}
+
+.main-head__movies {
+    grid-area: head;
+}
+.main-body__movies {
+    grid-area: body;
+    display: grid;
+    grid-template-areas: "popMovies"
+                         "justReviewed";    
+}
+.main-body__movies img:hover{
+    cursor: pointer;
+    border: 2px solid #fb8500;
+    transition: 0.2s ease;
+}
+.popular__nav {
+    justify-self: center;
+    width: 1172px;
+    height: auto;
+    background-color: #14181c;
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+}
+.popular__nav h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fb8500;
+}
+.popular__nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.just-reviewed {
+    grid-area: justReviewed;
+    justify-self: center;
+    width: 1172px;
+    height: auto;
+    background-color: #14181c;
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+}
+.just-reviewed h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fb8500;
+}
+.just-reviewed ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-footer__movies {
+    grid-area: footer;
+}
+
+
+footer {
+    background-color: #14181c;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+footer ul li {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+.w-border {
+    border-right: 2px solid white
+}
+.copyright {
+    margin-top: 20px;
+    font-size: 0.6rem;
+}
+
+
+@media only screen and (max-width: 780px){
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        width: 100vw;
+        justify-self: center;
+        justify-content: space-evenly;
+    }
+    .forms {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .img-mobile img{
+        display: none;
+    }
+    .nav__mobile {
+        background-color: #fb8500;
+        width: 6vw;
+        height: 5vh;
+        font-size: 1rem;
+    }
+    .nav__links {
+        display: none;
+    }
+    .main-body {
+        grid-template-areas: "popMovies"
+                             "newMovies" 
+                             "newSeries"
+                             "popStreaming";
+                             overflow-x: hidden;
+    }                        
+
+    .popular-movies{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-movies h2{
+        margin: 0px 0px 10px 0px;
+        font-size: 1.2rem;
+        width: fit-content;
+        border-bottom: 2px solid #fb8500;
+    }
+    .popular-movies ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-left: 15vw;
+        justify-content: space-evenly;
+    }
+    .popular-movies ul li {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        
+    }
+    .popular-movies ul li img {
+        display: flex;
+        width: 20vw;
+        height: 25vh;
+        
+    }
+    .popular-movies ul .img-mobile img {
+        display: none;
+    }
+    .image__overlay {
+        display: none;
+    }
+    .news {
+        width: 100vw;
+        height: auto;
+    }
+    .news ul {
+        margin-top: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .nav-mobile {
+        background: linear-gradient(120deg,#fd9e02,#9a130e);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .nav-mobile ul{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-mobile ul li a{
+        color: white;
+    }
+    .nav-mobile ul li a:visited,.nav-mobile ul li a:active{
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 1180px) {
+    header {
+        width: 100%;
+        justify-self: center;
+        justify-content: space-evenly;
+    }
+    
+    .nav__mobile {
+        background-color: #fb8500;
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+    }
+    .nav-mobile {
+        background: linear-gradient(120deg,#fd9e02,#9a130e);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        overflow-x: hidden;
+    }
+    .nav-mobile ul{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-mobile ul li a{
+        color: white;
+    }
+    .nav-mobile ul li a:visited,.nav-mobile ul li a:active{
+        color: white;
+    }
+    
+    .nav__links {
+        display: none;
+    }
+    .main-body {
+        grid-template-areas: "popMovies popMovies popMovies"
+                             "newMovies newSeries popStreaming"" 
+    }
+    .new-movies ,.new-series ,.popular-streaming {
+        width: 30vw;
+        height: auto;
+        display: flex;
+    }
+    .new-container {
+        width: 20vw;
+        height: 50vh;
+        display: flex;
+    }
+    .new-container h2 {
+        font-size: 1rem;
+    }                   
+    .popular-movies{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    .popular-movies ul {
+        display: flex;
+        justify-content: space-evenly;
+        justify-self: center;
+    }
+    .image__overlay {
+        display: none;
+    }
+    .popular-movies h2 {
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+    .popular-movies ul li {
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .popular-movies ul li img {
+        display: flex;
+        width: 10vw;
+    }
+    .popular-movies__mobile {
+        display: none;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .news {
+        width: 90vw;
+        height: auto;
+    }
+    .news ul {
+        margin-top: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .popular__nav ul, .just-reviewed ul {
+        margin-top: 20px;
+        width: 90vw;
+        height: fit-content;
+        overflow-x: hidden ;
+    }
+    .popular__nav {
+        width: 90vw;
+        height: auto;
+    }
+    .just-reviewed {
+        width: 90vw;
+        height: auto;
+        overflow-x: hidden ;
+    }
+    .just-reviewed ul li img {
+        width: 10vw;
+    }
+    .popular__nav ul li, just-reviewed ul li{
+        width: fit-content;
+        height: fit-content;
+        overflow-x: hidden;
+    }
+    .popular__nav ul li img {
+        width: 20vw;
+    }
+    
+}
+
+@media only screen and (min-width: 1181px){
+    .nav__mobile {
+        display: none;
+    }
+    .popular-movies__mobile {
+        display: none;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .nav-mobile {
+        display: none;
+    }
+} 
+
