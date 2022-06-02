@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
-    <title>FMS Movies</title>
     <script src="https://kit.fontawesome.com/c50bb7b930.js" crossorigin="anonymous"></script>
+    <title>FMS Movies</title>
 </head>
 <body class="main">
     <header class="main-head__movies">
-        <div>
-            <button class="nav__mobile"><i class="fa-solid fa-bars"></i></button>
-        </div>
-        <div class="logo">
-            <a href="../index.html"><img src="../tools/LogoFMSWhite3.png" alt="logotipo"></a>
-        </div>
-        <div class="logo-mobile">
-            <a href="../index.html"><img src="../tools/logoFMSWhite4.png" alt="logotipo"></a>
-        </div>
-        <div class="search-box" id="search-box">
-            <input class ="search-box__input" type="text" name=""  placeholder="Type to search">
-            <button class="search-box__submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <nav class="nav__links">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./movies.html">Movies</a></li>
-                <li><a href="./series.html">Series</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-        <nav class="forms">
-            <a href="../vistas/sign_up.html" target="_blank">Sign Up</a>
-            <a href="../vistas/log_in.html" target="_blank">Log In</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../tools/logoFMSWhite3.png" alt="Logotipo"></a>
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav align-items-center navs">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                        <a class="nav-link" href="./news.html">NEWS</a>
+                        <a class="nav-link" href="./movies.html">MOVIES</a>
+                        <a class="nav-link" href="./series.html">SERIES</a>
+                        <a class="nav-link" href="./about.html">ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="forms">
+                <a href="./sign_up.html" target="_blank">Sign Up</a>
+                <a href="./log_in.html" target="_blank">Log In</a>
+            </nav>
         </nav>
     </header>
     <main class="main-body__movies">
@@ -64,15 +61,6 @@
             </ul>
         </section>
     </main>
-    <nav class="nav-mobile">
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="news.html">NEWS</a></li>
-            <li><a href="movies.html">MOVIES</a></li>
-            <li><a href="series.html">SERIES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
     <footer class="main-footer__movies">
         <nav>
             <ul>
@@ -88,4 +76,6 @@
             </p>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+</html>

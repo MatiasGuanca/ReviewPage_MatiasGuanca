@@ -35,7 +35,15 @@ header {
    flex-wrap: wrap;
    padding: 10px 0px;
 }
-
+.navs a{
+    color: white;
+}
+.navs a:hover{
+    color: #fb8500;
+}
+.toggler {
+    background-color: #fb8500;
+}
 .search-box {
     border: 2px solid #fb8500;
     display: flex;
@@ -62,37 +70,19 @@ header {
 .logo {
     display: flex;
     justify-content: center;
-}                                 
-.nav__links {
-    width: 37%;
-}
-.nav__links ul {
-    display: flex;
-    width: 100%;
-}
-.nav__links ul li {
-    padding: 0px 15px;
-}
-.nav__links ul li a {
-    transition: 0.3s ease;
-    color: white;
-}
-.nav__links ul li a:visited, .nav__links ul li a:active {
-    color: white;
-}
-.nav__links ul li a:hover {
-    background: linear-gradient(120deg,#fd9e02,#9a130e);
-    padding: 0.4rem;
-    border-radius: 30px;
-}
+}                         
+
 .forms {
+    width: 100%;
     font-size: 1rem;
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
 }
 .forms a {
     color: #fd9e02;
     transition: 0.3s ease;
     padding: 0px 5px;
+    text-decoration: none;
 }
 .forms a:visited {
     color: #fd9e02;
@@ -107,14 +97,15 @@ header {
                          "newMovies newSeries popStreaming";
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto;
+    height:auto;
 }
 .popular-movies{
     grid-area: popMovies;
     justify-self: center;
     width: 1172px;
-    height: 310px;
+    height: auto;
     background-color: #14181c;
-    padding: 40px 0px;
+    padding: 0px 0px;
 }
 .popular-movies h2{
     display: inline-block;
@@ -145,7 +136,7 @@ header {
     font-size: 1rem;
     top: 0;
     left: 0;
-    width: 99%;
+    width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
     color: white;
@@ -161,7 +152,7 @@ header {
     border: 2px solid #fd9e02;
     border-radius: 7px;
     opacity: 1;
-}
+}ar
 
 .new-movies{
     grid-area: newMovies;
@@ -196,10 +187,9 @@ header {
     justify-content: center;
     background-color: #14181c;
     width: 100%;
-    height: 400px;
-    padding: 30px 0px;
+    height: 100%;
+    padding: 25px 0px;
 }
-
 .main-head__news {
     grid-area: head;
 }
@@ -262,13 +252,24 @@ header {
 .main-head__movies {
     grid-area: head;
 }
-.main-body__movies {
+.main-body__movies{
     grid-area: body;
     display: grid;
     grid-template-areas: "popMovies"
                          "justReviewed";    
 }
+.main-body__series {
+    grid-area: body;
+    display: grid;
+    grid-template-areas: "popMovies"
+                         "justReviewed";  
+}
 .main-body__movies img:hover{
+    cursor: pointer;
+    border: 2px solid #fb8500;
+    transition: 0.2s ease;
+}
+.main-body__series img:hover{
     cursor: pointer;
     border: 2px solid #fb8500;
     transition: 0.2s ease;
@@ -314,6 +315,11 @@ header {
     grid-area: footer;
 }
 
+.card_style {
+    margin-left: 20%;
+    background: linear-gradient(120deg,#fd9e02,#9a130e);
+}
+
 
 footer {
     background-color: #14181c;
@@ -343,27 +349,10 @@ footer ul li {
     body {
         overflow-x: hidden;
     }
-    header {
-        width: 100vw;
-        justify-self: center;
-        justify-content: space-evenly;
-    }
     .forms {
         display: none;
     }
     .logo{
-        display: none;
-    }
-    .img-mobile img{
-        display: none;
-    }
-    .nav__mobile {
-        background-color: #fb8500;
-        width: 6vw;
-        height: 5vh;
-        font-size: 1rem;
-    }
-    .nav__links {
         display: none;
     }
     .main-body {
@@ -421,69 +410,9 @@ footer ul li {
         width: fit-content;
         height: fit-content;
     }
-    .nav-mobile {
-        background: linear-gradient(120deg,#fd9e02,#9a130e);
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    .nav-mobile ul{
-        display: flex;
-        width: 100%;
-        height: 8vh;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .nav-mobile ul li a{
-        color: white;
-    }
-    .nav-mobile ul li a:visited,.nav-mobile ul li a:active{
-        color: white;
-    }
 }
 
 @media only screen and (min-width: 781px) and (max-width: 1180px) {
-    header {
-        width: 100%;
-        justify-self: center;
-        justify-content: space-evenly;
-    }
-    
-    .nav__mobile {
-        background-color: #fb8500;
-        height: 50px;
-        width: 50px;
-        font-size: 2rem;
-    }
-    .nav-mobile {
-        background: linear-gradient(120deg,#fd9e02,#9a130e);
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        overflow-x: hidden;
-    }
-    .nav-mobile ul{
-        display: flex;
-        width: 100%;
-        height: 8vh;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .nav-mobile ul li a{
-        color: white;
-    }
-    .nav-mobile ul li a:visited,.nav-mobile ul li a:active{
-        color: white;
-    }
-    
-    .nav__links {
-        display: none;
-    }
     .main-body {
         grid-template-areas: "popMovies popMovies popMovies"
                              "newMovies newSeries popStreaming"" 
@@ -574,13 +503,7 @@ footer ul li {
 }
 
 @media only screen and (min-width: 1181px){
-    .nav__mobile {
-        display: none;
-    }
     .popular-movies__mobile {
-        display: none;
-    }
-    .logo-mobile {
         display: none;
     }
     .nav-mobile {
