@@ -44,52 +44,13 @@ header {
 .toggler {
     background-color: #fb8500;
 }
-.search-box {
-    border: 2px solid #fb8500;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    height: 30px;
-    padding: 2px;
-}
-.search-box__input {
-    font-size: 1rem;
-    padding: 0em 0.5em;
-    margin-right: 3px;
-    border-radius: 50px;;
-    border: 0;
-}
-.search-box__submit {
-    font-size: 1rem;
-    border: 0;
-    background: linear-gradient(120deg,#fd9e02,#9a130e);
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-}
+
 .logo {
     display: flex;
     justify-content: center;
 }                         
 
-.forms {
-    width: 100%;
-    font-size: 1rem;
-    display: inline-flex;
-    flex-direction: row;
-}
-.forms a {
-    color: #fd9e02;
-    transition: 0.3s ease;
-    padding: 0px 5px;
-    text-decoration: none;
-}
-.forms a:visited {
-    color: #fd9e02;
-}
-.forms a:hover {
-    color: #bb3e03;
-}
+
 
 .main-body {
     display: grid;
@@ -152,7 +113,7 @@ header {
     border: 2px solid #fd9e02;
     border-radius: 7px;
     opacity: 1;
-}ar
+}
 
 .new-movies{
     grid-area: newMovies;
@@ -349,10 +310,15 @@ footer ul li {
     body {
         overflow-x: hidden;
     }
+    
     .forms {
         display: none;
     }
     .logo{
+        display: none;
+    }
+    
+    .nav__links {
         display: none;
     }
     .main-body {
@@ -361,8 +327,7 @@ footer ul li {
                              "newSeries"
                              "popStreaming";
                              overflow-x: hidden;
-    }                        
-
+    }                     
     .popular-movies{
         width: 100vw;
         height: fit-content;

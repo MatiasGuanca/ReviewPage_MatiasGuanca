@@ -1,0 +1,17 @@
+.toggler {
+  background: linear-gradient(120deg, #fd9e02, #9a130e); }
+
+.forms {
+  width: 100%;
+  font-size: 1rem;
+  display: inline-flex;
+  flex-direction: row; }
+  .forms a {
+    color: #fd9e02;
+    transition: 0.3s ease;
+    padding: 0px 5px;
+    text-decoration: none; }
+    .forms a:visited {
+      color: #fd9e02; }
+    .forms a:hover {
+      color: #bb3e03; }

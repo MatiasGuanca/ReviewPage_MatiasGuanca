@@ -1,0 +1,25 @@
+{
+  "name": "movies_series_reviews_guanca",
+  "version": "1.0.0",
+  "description": "Un paquete de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss estilos/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasGuanca/ReviewPage_MatiasGuanca.git"
+  },
+  "author": "Matias Guanca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasGuanca/ReviewPage_MatiasGuanca/issues"
+  },
+  "homepage": "https://github.com/MatiasGuanca/ReviewPage_MatiasGuanca#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
