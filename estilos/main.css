@@ -1,17 +1,21 @@
 .toggler {
   background: linear-gradient(120deg, #fd9e02, #9a130e); }
 
-.forms {
+.forms, .navs a {
   width: 100%;
   font-size: 1rem;
   display: inline-flex;
   flex-direction: row; }
-  .forms a {
+  .forms a, .navs a a {
     color: #fd9e02;
     transition: 0.3s ease;
     padding: 0px 5px;
     text-decoration: none; }
-    .forms a:visited {
+    .forms a:visited, .navs a a:visited {
       color: #fd9e02; }
-    .forms a:hover {
-      color: #bb3e03; }
+    .forms a:hover, .navs a a:hover {
+      color: #9a130e; }
+
+.navs a {
+  font-size: 1.1rem;
+  color: white; }

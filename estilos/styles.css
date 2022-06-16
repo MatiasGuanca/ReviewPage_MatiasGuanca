@@ -189,9 +189,7 @@ header {
     flex-direction: column;
 
 }
-.news ul li:hover {
-    background: linear-gradient(120deg,#fd9e02,#9a130e);
-}
+
 .news ul li img{
     height: 160px;
     width: 300px;

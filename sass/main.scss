@@ -1,23 +1,37 @@
 $gradientBackground: linear-gradient(120deg,#fd9e02,#9a130e);
+$colors: (         
+    hovers: #fd9e02,
+    formHovers: #9a130e,
+    defaultColor: white
+);
+@mixin fontSize($fontSize){
+    font-size: $fontSize;
+}
+
 .toggler {
     background: $gradientBackground;
 }
 .forms {
     width: 100%;
-    font-size: 1rem;
+    @include fontSize(1rem);
     display: inline-flex;
     flex-direction: row;
     a {
-        color: #fd9e02;
+        color: map-get($colors, hovers);
         transition: 0.3s ease;
         padding: 0px 5px;
         text-decoration: none;
         &:visited {
-            color: #fd9e02;
+            color: map-get($colors, hovers);
         }
         &:hover {
-            color: #bb3e03;
+            color: map-get($colors, formHovers);
         }
-    }
-        
+    }      
 }
+.navs a {
+    @extend .forms;
+    @include fontSize(1.1rem);
+    color: map-get($colors, defaultColor);
+}
+
