@@ -164,7 +164,7 @@ header {
 .news {
     justify-self: center;
     width: 1172px;
-    height: auto;
+    height: 100%;
     background-color: #14181c;
     padding: 40px 0px;
     text-align: center;
@@ -177,7 +177,7 @@ header {
 }
 .news ul {
     width: fit-content;
-    height: 800px;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -185,9 +185,9 @@ header {
 }
 .news ul li {
     width: 320px;
-    height: 340px;
+    height: 400px;
     flex-direction: column;
-
+    padding-bottom: 40px;
 }
 
 .news ul li img{
@@ -244,12 +244,13 @@ header {
 }
 .popular__nav h2 {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 2px solid #fb8500;
 }
 .popular__nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 0;
 }
 .just-reviewed {
     grid-area: justReviewed;
@@ -268,7 +269,8 @@ header {
 }
 .just-reviewed ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    height: fit-content;
 }
 .main-footer__movies {
     grid-area: footer;
@@ -372,6 +374,34 @@ footer ul li {
         margin-top: 20px;
         width: fit-content;
         height: fit-content;
+    }
+    
+    .popular__nav ul, .just-reviewed ul {
+       
+        width: 100%;
+        height: fit-content;
+        overflow-x: hidden ;
+    }
+    
+    .popular__nav {
+        width: 100vw;
+        height: fit-content;
+    }
+    .just-reviewed {
+        width: 100vw;
+        height: fit-content;
+        overflow-x: hidden ;
+    }
+    .just-reviewed ul li img {
+        width: 15vw;
+    }
+    .popular__nav ul li, .just-reviewed ul li{
+        width: fit-content;
+        height: fit-content;
+        overflow-x: hidden;
+    }
+    .popular__nav ul li img {
+        width: 20vw;
     }
 }
 

@@ -19,3 +19,34 @@
 .navs a {
   font-size: 1.1rem;
   color: white; }
+
+.popular__nav ul {
+  height: fit-content; }
+  .popular__nav ul li {
+    width: 100%;
+    height: 360px; }
+    .popular__nav ul li img {
+      border: 1px solid #A9B8BF; }
+
+.just-reviewed ul {
+  justify-content: space-between; }
+  .just-reviewed ul li {
+    height: 150px;
+    width: 100%; }
+
+@media only screen and (max-width: 780px) {
+  .popular__nav h2, .just-reviewed h2 {
+    font-size: 1.1rem; }
+  .popular__nav ul, .just-reviewed ul {
+    justify-content: space-between;
+    padding: 0; }
+    .popular__nav ul li, .just-reviewed ul li {
+      width: fit-content;
+      height: fit-content;
+      overflow-x: hidden; }
+  .card_body {
+    margin: 0; }
+  .main-body__about {
+    height: fit-content; }
+  footer {
+    height: 100%; } }
