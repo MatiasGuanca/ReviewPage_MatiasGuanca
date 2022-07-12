@@ -33,6 +33,11 @@ $colors: (
     @extend .forms;
     @include fontSize(1.1rem);
     color: map-get($colors, defaultColor);
+    font-size: 1.1rem;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
 }
 
 .popular__nav ul {
@@ -46,13 +51,12 @@ $colors: (
     }
 
 }
-.just-reviewed {
-    ul{
-        justify-content: space-between;
-        li {
-            height: 150px;
-            width: 100%;
-        }
+.just-reviewed ul {
+    height: fit-content;
+    width: fit-content;
+    li {
+        height: 200px;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 780px){
@@ -80,3 +84,119 @@ $colors: (
         height: 100%;
     }
 }
+
+.new-movies, .new-series, .popular-streaming {
+    .new-container{
+        height: 600px;
+        width: 350px;
+        ul{
+            padding: 0;
+            margin: 20px 0px 0px 0px;
+            
+            li {
+                width: 100%;
+                min-height: 170px;
+                font-size: 0.8rem;
+                display: flex;
+                color: white;
+                margin: 10px 0px 10px 0px;
+                .title_desc {
+                    h3{
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                        text-align: justify;
+                        margin-right: 5px;
+                    }
+                }
+                img {
+                    margin: 10px 5px 0px 10px;
+                    align-self: flex-start;
+                    height: 100%;
+                }
+            }
+        }
+    }
+} 
+
+.popular__nav ul{
+    display: flex;
+    justify-content: space-around;
+    li{
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+        img{
+            min-width: 10vw;
+            height: 100%;
+            border-radius: 7px;
+        }
+    }
+}
+.image__overlay--popular_moves_series {
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.1s ease;
+    text-align: center;
+    &:hover {
+        border: 2px solid #fd9e02;
+        border-radius: 7px;
+        opacity: 1;
+    }
+}
+
+.just-reviewed {
+    ul {
+        height:fit-content;
+        
+        li {
+            display: flex;
+            flex-direction:row;
+            height: 100%;
+            min-height: 300px;
+            border: 2px solid white;
+            margin: 20px 0px 20px 0px;
+            background: linear-gradient(130deg,#ca6702,#ae2012);
+            p {
+                text-align: justify;
+                font-size: 1rem;
+                margin: 12px;
+            }
+            img{
+                height: 100%;
+                align-self: center;
+                border: 1px solid white;
+                &:hover{
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+}
+.card-text{
+    font-size: 1.3rem;
+}
+h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media only screen and (max-width: 780px){
+    .main-body__about {
+        height: 100%;
+    }
+}
+    

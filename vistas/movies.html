@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="stylesheet" href="../estilos/main.css">
     <script src="https://kit.fontawesome.com/c50bb7b930.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>FromMySeat | Movies</title>
 </head>
 <body class="main">
@@ -39,23 +40,33 @@
         <nav class="popular__nav">
             <h2>Popular Movies This Week</h2>
             <ul>
-                <li><img src="../tools/popularthisweek/dr_strange.jpg" alt="dr_strange"></li>
-                <li><img src="../tools/popularthisweek/the_northman.jpg" alt="the_northman"></li>
-                <li><img src="../tools/popularthisweek/the_batman.jpg" alt="the_batman"></li>
-                <li><img src="../tools/popularthisweek/everything_everywhere_all_at_once.jpg" alt="everything_everywhere_all_at_once"></li>
+                <li><img src="../tools/popularthisweek/dr_strange.jpg" alt="dr_strange"><div class="image__overlay--popular_moves_series">Dr. Strange</div></li>
+                <li><img src="../tools/popularthisweek/the_northman.jpg" alt="the_northman"><div class="image__overlay--popular_moves_series">The Northman</div></li>
+                <li><img src="../tools/popularthisweek/the_batman.jpg" alt="the_batman"><div class="image__overlay--popular_moves_series">The Batman</div></li>
+                <li><img src="../tools/popularthisweek/everything_everywhere_all_at_once.jpg" alt="everything_everywhere_all_at_once"><div class="image__overlay--popular_moves_series">Everything Everywhere Here All At Once</div></li>
             </ul>
         </nav>
         <section class="just-reviewed">
-            <h3>Just Reviewed</h3>
+            <h2>Just Reviewed</h2>
             <ul>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
-                <li><img src="../tools/popularthisweek/example1.png" alt="gladiator"></li>
+                <li data-aos="fade-right"><img src="../tools/reviews/Thor_Love_and_Thunder-306525443-large.jpg" alt="Thor_love_and_thunder"><div class="title_desc"><h3>Thor: Love and thunder</h3><p><strong>A parody of Thor</strong><br>
+                    Though the movie had so much potential but sadly it became a mediocre parody .just disappointing. Only positive thing is gorr's presence.otherwise whole movie didn't stood up to the expectations.it's even below then Ragnarok.probably 2nd worst thor movie after The dark world.
+                    
+                    One of the biggest disappointing thing is the pace & Runtime movie needed 2hrs 30 mins time for establishing the characters with the story. Everything Just feels rushed.
+                    
+                    Another big negetive aspect is thor is known for mind blowing & goosebumpsy fight scenes but this movie didn't have any single moments like that.
+                    
+                    It should've been little dark & serious story telling rather than a cheap parody.</p></div></li>
+                <li data-aos="fade-right"><img src="../tools/reviews/dr-strange-multiverse-of-madness.jpg" alt="Dr_strange_multiverse_of_madness"><div class="title_desc"><h3>Dr. Strange: The multiverse in the multiverse of madness</h3><p><strong>Not enough multiverse and maybe too much madness</strong><br>
+                    Sam Raimi definitely put a splash of horror in this action film. Doctor Strange in the Multiverse of Madness is darker & more violent than any previous MCU movie, which could be considered a strength. However, I felt like there was not enough multiverse and maybe too much madness. Despite the entertaining visuals, the plot is fairly chaotic, and the acting & dialogue are inconsistent. This movie is an entertaining ride, but it's a little too messy to stand on its own.</p></div></li></li>
+                <li data-aos="fade-right"><img src="../tools/reviews/Top_Gun_Maverick-537976462-large.jpg" alt="Top_gun_maverick"><div class="title_desc"><h3>Top-Gun: Maverick</h3><p><strong>Flying High</strong><br>
+                    Top Gun (1986) made Tom Cruise a star, and now 36 years later he jumps back in role of Pete Mitchell AKA Maverick almost like he never left.
+                    
+                    Maverick never seems let his age slow him down, and still is cocky has ever, and is ordered to train a bunch of young pilots for a deadly mission, but sees a little bit of himself in them, and must get them working together has a team.
+                    
+                    Tom Cruise is great has Maverick, who is coming to terms with the past. Miles Teller and Glen Powell are also great, and not to mention Jennifer Connelly. But the flying scenes are what makes this movie, you feel like your flying with them. Feels has real has ever. A terrific sequel 36 years worth the wait.</p></div></li></li>
+                <li data-aos="fade-right"><img src="../tools/reviews/Everything_Everywhere_All_at_Once.jpg" alt="Everything_Everywhere_here_All_at_Once"><div class="title_desc"><h3>Everything everywhere here all at once</h3><p><strong>Best film of 2022</strong><br>Profoundly deep, genuinely moving, utterly hilarious, highly imaginative and a visual feast. Haven't laughed this hard, cried this much or thought so deeply about any film in 2022 Much less all in the same viewing. This was indeed everything, everywhere all at once.</p></div></li></div></li>
+
             </ul>
         </section>
     </main>
@@ -75,5 +86,9 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

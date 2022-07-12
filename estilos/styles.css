@@ -128,7 +128,7 @@ header {
     
 }
 .new-container {
-    background: linear-gradient(120deg,#fd9e02,#9a130e);
+    background: linear-gradient(130deg,#ca6702,#ae2012);
     border-radius: 15px;
     width: 325px;
     height: 400px;
@@ -215,13 +215,15 @@ header {
     grid-area: body;
     display: grid;
     grid-template-areas: "popMovies"
-                         "justReviewed";    
+                         "justReviewed"
+                         "footer";    
 }
 .main-body__series {
     grid-area: body;
     display: grid;
     grid-template-areas: "popMovies"
-                         "justReviewed";  
+                         "justReviewed"
+                         "footer";  
 }
 .main-body__movies img:hover{
     cursor: pointer;
@@ -256,20 +258,20 @@ header {
     grid-area: justReviewed;
     justify-self: center;
     width: 1172px;
-    height: auto;
+    height: fit-content;
     background-color: #14181c;
     padding: 40px 0px;
     text-align: center;
     color: white;
 }
-.just-reviewed h3 {
+.just-reviewed h2 {
     display: inline-block;
     margin-bottom: 20px;
     border-bottom: 2px solid #fb8500;
 }
 .just-reviewed ul{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     height: fit-content;
 }
 .main-footer__movies {
@@ -284,7 +286,7 @@ header {
 
 footer {
     background-color: #14181c;
-    height: 100px;
+    height: 150px;
     color: white;
     display: flex;
     justify-content: center;
@@ -377,7 +379,6 @@ footer ul li {
     }
     
     .popular__nav ul, .just-reviewed ul {
-       
         width: 100%;
         height: fit-content;
         overflow-x: hidden ;
@@ -401,7 +402,8 @@ footer ul li {
         overflow-x: hidden;
     }
     .popular__nav ul li img {
-        width: 20vw;
+        max-width: 21vw;
+        min-height: 15vh;
     }
 }
 

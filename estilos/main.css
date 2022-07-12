@@ -18,7 +18,12 @@
 
 .navs a {
   font-size: 1.1rem;
-  color: white; }
+  color: white;
+  font-size: 1.1rem;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease; }
 
 .popular__nav ul {
   height: fit-content; }
@@ -29,9 +34,10 @@
       border: 1px solid #A9B8BF; }
 
 .just-reviewed ul {
-  justify-content: space-between; }
+  height: fit-content;
+  width: fit-content; }
   .just-reviewed ul li {
-    height: 150px;
+    height: 200px;
     width: 100%; }
 
 @media only screen and (max-width: 780px) {
@@ -49,4 +55,95 @@
   .main-body__about {
     height: fit-content; }
   footer {
+    height: 100%; } }
+
+.new-movies .new-container, .new-series .new-container, .popular-streaming .new-container {
+  height: 600px;
+  width: 350px; }
+  .new-movies .new-container ul, .new-series .new-container ul, .popular-streaming .new-container ul {
+    padding: 0;
+    margin: 20px 0px 0px 0px; }
+    .new-movies .new-container ul li, .new-series .new-container ul li, .popular-streaming .new-container ul li {
+      width: 100%;
+      min-height: 170px;
+      font-size: 0.8rem;
+      display: flex;
+      color: white;
+      margin: 10px 0px 10px 0px; }
+      .new-movies .new-container ul li .title_desc h3, .new-series .new-container ul li .title_desc h3, .popular-streaming .new-container ul li .title_desc h3 {
+        font-size: 1rem;
+        font-weight: bold; }
+      .new-movies .new-container ul li .title_desc p, .new-series .new-container ul li .title_desc p, .popular-streaming .new-container ul li .title_desc p {
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-right: 5px; }
+      .new-movies .new-container ul li img, .new-series .new-container ul li img, .popular-streaming .new-container ul li img {
+        margin: 10px 5px 0px 10px;
+        align-self: flex-start;
+        height: 100%; }
+
+.popular__nav ul {
+  display: flex;
+  justify-content: space-around; }
+  .popular__nav ul li {
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content; }
+    .popular__nav ul li img {
+      min-width: 10vw;
+      height: 100%;
+      border-radius: 7px; }
+
+.image__overlay--popular_moves_series {
+  position: absolute;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.1s ease;
+  text-align: center; }
+  .image__overlay--popular_moves_series:hover {
+    border: 2px solid #fd9e02;
+    border-radius: 7px;
+    opacity: 1; }
+
+.just-reviewed ul {
+  height: fit-content; }
+  .just-reviewed ul li {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: 300px;
+    border: 2px solid white;
+    margin: 20px 0px 20px 0px;
+    background: linear-gradient(130deg, #ca6702, #ae2012); }
+    .just-reviewed ul li p {
+      text-align: justify;
+      font-size: 1rem;
+      margin: 12px; }
+    .just-reviewed ul li img {
+      height: 100%;
+      align-self: center;
+      border: 1px solid white; }
+      .just-reviewed ul li img:hover {
+        border: 1px solid white; }
+
+.card-text {
+  font-size: 1.3rem; }
+
+h5 {
+  font-size: 2rem;
+  font-weight: bold; }
+
+@media only screen and (max-width: 780px) {
+  .main-body__about {
     height: 100%; } }
